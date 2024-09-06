@@ -1,356 +1,247 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        <style>
-            img{
-                width:165px;
-                height: 223px;
-                border-radius: 50%;
-            }
-            body{
-                background-image:linear-gradient(#636162, #b1afaf);
-                height:100vh;
-                font-weight: bold;
-                letter-spacing: 2px;
-            }
-            *{
-                margin: 0px; padding: 0px; font-family: 'montserrat', sans-serif;
-            }
-            .main{
-                background-color: white;
-                width: 950px;
-                height:1300px;
-                position:absolute;
-                transform: translate(-50%, -50%);
-                left: 50%;
-                top: 50%;   
-            }
-            .left{
-                background-color: yellow;
-                width:200px;
-                height:1300px;
-                float:left;
-            }
-            .right{
-                width:450px;
-                float:left;
-            }
-            .profile-img{
-                height: 220px;
-                width: 210px;
-                background-color: #ddd;
-                border-radius: 50%;
-                margin-bottom: 20px;
-                margin-left: 60px;
-                border:10px solid #fbb03b;
-                box-shadow: 6px 7px 9px 5px #fbb03b73;
-            }
-            .profile-img img{
-                width:100%;
-                border-radius: 50%;
-            }
-            .box-1{
-                position: relative;
-            }
-            .heading{
-                background-color: #4d4d4d;
-                padding: 10px;
-                color:#fbb03b;
-                text-align:left;
-                padding-left: 20px;
-                margin-right:-15px;
-            }  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+            background-image: url(Aaditorium.jpeg) ;
+            background-position: center;
+            background-size: cover;
+            height: 109vh;
+            width: fit-content;
+        }
+        .navbar{
+            width: 1200px;
+            height: 75px;
+            margin:auto;
+        }
+        .icon{
+            width: 200px;
+            float: left;
+            height: 50px;
+            margin-top: 01px;
+        }
+        .logo{
+            color: #ff7200;
+            font-family: Arial;
+            padding-left: 0px;
+            float: left;
+            padding-top: 02px;
+            font-size: 30px;
+        }
+        .search{
+            width: 300px;
+            float: left;
+            margin-left: 670px;
+        }
+        .srch{
+            font-family: 'Times New Roman';
+            width: 180px;
+            height: 8px;
+            background: transparent;
+            border: 2px solid #000000;
+            margin-top: 25px;
+            color: rgb(0, 0, 0);
+            border-right: none;
+            font-size: 20px;
+            float: left;
+            padding:10px;
+            border-bottom-left-radius: 18px;
+            border-top-left-radius: 20px;
+        }
+        .btn{
+            width:100px;
+            height: 23.8px;
+            background: #ffffff;
+            border: 2px solid #000000;
+            margin-top: 25px;
+            color: #ff0000;
+            font-display: center;
+            font-size: 20px;
+            border-bottom-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .btn:focus{
+            outline: none;
+        }
+        .srch:focus{
+            outline: none;
+        }
+        div.sticky{
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+            padding: 04px;
+            background-color: #12e32e;
+            margin-top: 0px;
+            width: 1190px;
+            float: right ;
+            height: 75px;
+        }
+        .contant1{
+            width:fit-content;
+            color: #000000;   
+            padding:80px;
+        }
+        .contant2{
+            float: right;
+        }
+        .container{
+            background-color: #ffffff;
+            height:250px;
+        }
+          ul{
+            float: left;
+            display: flex;
+            justify-content: start;
+            align-items:start;
+        }
+        ul li{
+            list-style: none;
+            margin-left: 160px;
+            margin-top: 35px;
+            font-size: 10px;
+        }
+        ul li a{
+            text-decoration: none;
+            color: #000000;
+            font-family: Arial;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+        }
+        ul li a:hover{
+            color: #ff7200;
+        }
+        .pragaph{
+            padding: 01px;
+        }
+        .container{
+            margin-bottom: 50px;
+            padding-right: 0px;            
+        }
+        .contant3{
+            padding: 50x;
+            background-image: url(Kce.jpeg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 109vh;
+            width:100%;
+        }
+        .container1{
+            padding-right: 30px;
+            float: left;
+            width: fit-content;
+            height: fit-content;
+            background-color: #ffffff;
+        }
+        table,th,td{
+            border:1px solid rgb(93, 92, 92);
+        }
+            </style>
+</head>
+<body>
+    <div class="main">
+           <div class="sticky">
+           <div class="col-1 row-1 sticky">
+            <ul>
+                <li><a href="#" style="font-size: 25px;">Aboutus</a></li>
+                <li><a href="#" style="font-size: 25px;">contact</a><li>
+                <li><a href="#" style="font-size: 25px;">Signin</a></li>
+                <li><a href="#" style="font-size: 25px;">Register</a></li>
+            </ul>
+        </div>
+           </div>
+           <br>
+           <div class="navbar">
+            <div class="icon">
+                <h5 class="logo"><br>
+                <img src="kaceloge.png" alt="karpagam" width="260px" height="100px"></h5>
+            </div>
+            <div class="search"> <br>
+                <br>
+                <input class="srch" type="search" placeholder="" name="Type to text">
+                <a href="#"><button class="btn">Search</button></a>
+           </div>
+           <br>
+           <br>
            
-            .soft{
-                background-color: #4d4d4d;
-                padding:10px;
-                color:#fbb03b;
-                text-align: left;
-                padding-left:20px;
-                margin-right: -15px;
-            }
-             .heading::after{
-                content: '';
-                position: absolute;
-                width: 21px;
-                height: 18px;
-                background-color: #5a5959;
-                left: 191px;
-                top: 26px;
-                transform: rotate(56deg);
-                z-index: -1;
-            }
-            .p1{
-                padding:9px 10px;
-                font-size:11px;
-            }
-            .icons1{
-                font-size: 16px!important;
-                padding-right:10px!important;
-                vertical-align:sub;
-            }
-            .skill-container{
-                width:90%;
-                background-color:#4d4d4d;
-                margin:0px 10px;
-            }
-            .skill{
-                text-align:right;
-                padding-top:2px;
-                padding-bottom: 2px;
-                color: white;
-            }
-            .html{
-                width: 90%;
-                background-color: white;
-            }
-            .css{
-                width: 85%;
-                background-color: white;
-            }
-            .js{
-                width:50%;
-                background-color: white;
-            }
-            .cp{
-                width: 50%;
-                background-color: white;
-            }
-            .web{
-                width:90%;
-                background-color: white;
-            }
-            .gra{
-                width:60%;
-                background-color: white;
-            }
-            .icons2{
-                padding: 18px 10px;
-            }
-            .name-div{
-                padding:86px 0px 60px 55px;
-                text-align: center;
-                letter-spacing: 3px;
-            }
-            .name-div h1{
-                margin-bottom: 10px;
-            }
-            .box-2{
-                padding:0px 50px;
-                margin-top: 30px;
-            }
-            .p2{
-                font-size: 10px;
-                font-weight: 300;
-                letter-spacing: 1px;
-                word-spacing: 2px;
-                line-height: 18px;
-                margin-top: 5px;
-            }
-            table,tr,td{
-    border:2px solid black;
-    border-collapse: collapse;
-    text-align: center;
-    padding: 10px;
-}
-            .h2{
-                font-size: 16px;
-                margin-bottom: 15px;
-            }
-          .p3{
-            font-size: 13px;
-            word-spacing: 1px;
-            letter-spacing: 0px;
-            margin-top: 10px;
-          }
-          .icons3{
-            vertical-align: bottom;
-            font-size: 21px !important;
-            color:#4d4d4d;
-            text-align: center;
-          }
-        
-        </style>
-
-    </head>
-    <body>
-        
-        <div class="main">
-            <div class="left">
-                <br>
-                <div class="profile-img"><img src="photo.jpg"></div>
-                <div class="box-1">
-                    <div class="heading">
-                        <p>CONTACT</p>
-                    </div>
-                    
-                    <p class="p1"><i class="material-icons icons1"><i class="fa-solid fa-phone"></i></i>+91 9943782104</p>
-                    <p class="p1"><i class="material-icons icons1"><i class="fa-solid fa-envelope"></i>
-                    </i>mv2050286@gmail.com</p>
-                </div>
-                <br>
-                <div class="box-1">
-                    <div class="heading">
-                        <p>LANGUAGES</p>
-                    </div>
-                    <p class="p1">HTML
-                    <div class="skill-container">
-                        <div class="skill html"></div>
-                        </div>
-                    </p>
-                    <p class="p1">CSS
-                        <div class="skill-container">
-                            <div class="skill css"></div>
-                            </div>
-                        </p>
-                        <p class="p1">JAVASCRIPT
-                            <div class="skill-container">
-                                <div class="skill js"></div>
-                                </div>
-                            </p>
-                            <p class="p1">C PROGRAMMING
-                                <div class="skill-container">
-                                    <div class="skill cp"></div>
-                                    </div>
-                                </p>
-                </div>
-                <br>
-                <br>
-                <div class="box-1">
-                    <div class="heading">
-                        <p>SKILL</p>
-                    </div>
-                    
-                    <p class="p1">WEBSITE DESIGN
-                    <div class="skill-container">
-                        <div class="skill web"></div>
-                        </div>
-                    </p>
-                    <p class="p1">GRAPHIC DESIGN
-                        <div class="skill-container">
-                            <div class="skill gra"></div>
-                            </div>
-                        </p>
-                        
-                </div>
-                <br>
-                <br>
-                <div class="box-1">
-                    <div class="heading">
-                        <p>HOBBIES</p>
-                    </div>
-                    <br>
-                    <div class="h-div">
-                        <i class="material-icons icons2"><i class="fa-solid fa-cricket-bat-ball">cricket</i></i><br><br>
-                        <i class="material-icons icons2"><i class="fa-solid fa-person-swimming">--swimming</i></i><br><br>
-                        <i class="material-icons icons2"><i class="fa-solid fa-headphones">--music-hearing</i></i><br><br>
-                        <i class="material-icons icons2"><i class="fa-solid fa-bicycle"></i>--by_cycle</i></i><br><br>
-                        <i class="material-icons icons2"><i class="fa-solid fa-futbol"></i>--foot-ball</i></i>
-                    </div> 
-                </div>
-                <br>
-                <div class="box-1">
-                    <div class="heading">
-                        <p>SOFT SKILL</p>
-                    </div><br>
-                    <div class="n-div">
-                        <p>Time management</p><br>
-                        <p>Problem solving</p><br>
-                        <p>Leadership</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="right">
-                <center>
-                    <br><br><br><br><br><br>
-                    <h1><pre>                  VIGNESH M</pre></h1>
-                    <p><pre>                                Website Designer</pre></p>
-                </center>
-            </div>
-            
-            <br><br><br><br><br><br><br><br><br><br><br><br>
-                <div class="box-2">
-                    <h2><pre>      About Me<i class="fa-solid fa-address-book"></i></pre></h2><br>
-                    <p class="p3">
-                   <h3><pre>       Personal details:</pre></h3><br>
-                   <pre>                    Name :       Vignesh M <br>                    D.O.B :       08-02-2006 <br>                    Blood group: B+ve
-                    Address :   270/1 NADDU STREET,
-                                     Padiagharam(post),Chengam(Tk),
-                                     Thiruvannamalai(DT),
-                                     Tamil Nadu-606 705   <br>                    Language:  Tamil , English <br>
-                   
-                </pre> </p>
-            </div>
-
-            <div class="box-2">
-                  <h2><pre>   EDUCATION:<i class="fa-solid fa-laptop-file"></i></pre></h2><br>
-                
-
-                <form>
-                    <center>
-                            <table class=".center"> 
-                      <tr>
-                            <td><h3><b>Degree</h3></td>
-                            <td><h3>Institution</h3></td>
-                            <td><h3>Year passed</h3></td>
-                            <td><h3>Percentage</h3></td></b>
-                    </tr>
-                        <tr>
-                            <td>HSC</td>
-                            <td>Govt Higher Secondary School</td>
-                            <td>2023-2022</td>
-                            <td>76.5%</td>
-                           <tr><td>SSLC</td>
-                        <td>Govt Higher Secondary School</td>
-                        <td>2020-2021</td>
-                        <td>Pass</td>
-                    </tr> 
-                </center>
-                    </table><br>
-                </form></div>
-                <br>
-                <div class="box-2">
-                    <h2><pre>    ACHIEVEMENTS:<i class="fa-solid fa-shield-halved"></i></pre></h2>
-               <br><br>
-                <form>
-                    <center>
-                        <table>
-                            <tr>
-                            <td><h3><b>Participaite</h3></td>
-                            <td><h3>Name</h3></td>
-                            <td><h3>Certificate</h3></td></b>
-                        </tr>
-                        <tr>
-                            <td rowspan="2">Woork shop</td>
-                            <td>Gen AI Workshop </td> 
-                            <td><a href="Vignesh M.png">open</a> </td>
-                        </tr>
-                        
-                        <tr>
-                            <td> Multi-sensor Fusion in ADAS</td>
-                            <td><a href="VIGNESH m.jpg">open</a></td>
-                        </tr>
-                        <tr>
-                            <td>Speaking</td>
-                            <td>District</td>
-                            <td><a href="speaking.jpg">open</a></td>
-                        </tr>
-                        <tr>
-                            <td>Sports</td>
-                            <td>Zonal</td>
-                            <td><a href="sport.jpg">open</a></td>
-                        </tr>
-                        <tr>
-                            <td>Toys making</td>
-                            <td>Participaite</td>
-                            <td><a href="toys.jpg">open</a></td>
-                        </tr> 
-                    </center>
-                    </table>
-                </form>
+           <br>
+           <br><br><br><br><br><br><br><br>
+           <h1 padding="10px"><b>About us</b></h1>
+           <div class="container">
+           <div class="contant2">
+            <p><pre><img src="Students.jpeg" alt="" width="400px" height="230px"></pre></p>
+        </div>
+            <div class="contant1">
+                <p><b>
+                    KCE was established with the vision of providing cutting edge <br> technical education and to create proficient engineers. <br>
+                    The college is accredited by NAAC with ‘A+’ Grade, TCS, <br> Wipro and NBA . KCE strives to impart quality education <br>
+                    and an excellent career start to all its students.
+                </b>  </p>
             </div>
         </div>
-    </body>
+        <br><br><br>
+        <h1>Placement</h1>
+        <br>
+        <img src="Screenshot (173).png" alt="" padding="10px">
+        <br><br><br><br>
+        <div class="contant3">
+            <br>
+            <h2>Programmes for you</h2><br><br>
+            <hr width="756px" size="5" color="red">
+            <div class="container1">
+                    <table>
+                        <center>
+                 <tr>
+                    <th>B.E. Civil Engineering</th>
+                    <th><pre>                         MBA                     </pre></th>
+                </tr><br><br>
+                <tr>
+                <td>B.E. Computer Science and Engineering</td>
+                <td>MCA</td>
+                </tr>
+                <tr><td>B.E. Computer Science and Engineering (CyberSecurity)</td>
+                <td>M.E. VLSI Design</td>
+                </tr>
+                <tr><td>B.E. Computer Science and Technology</td>
+                <td>M.E. Communication Systems</td>
+            </tr>
+                <tr><td>B.E. Electronics and Communication Engineering +</td>
+                    <td>M.E. Mechatronics</td>
+                </tr>
+                <tr><td>B.E. Electrical and Electronics Engineering +</td>
+                    <td>Ph.D. Mechanical Engineering</td>
+                </tr>
+                <tr><td>B.E. Electronics and Telecommunications Engineering</td>
+                    <td>Ph.D. Electrical & Electronics Engineering</td>
+                </tr>
+                <tr><td>B.E. Mechanical Engineering +</td>
+                    <td>Ph.D. Electronics and Communication Engineering</td>
+                </tr>
+                <tr><td>B. E. Computer Science and Design</td>
+                    <td>Ph.D. Information Technology</td>
+                </tr>
+                <tr><td>B.Tech. Information Technology +</td>
+                    <td>Ph.D. Computer Science and Engineering</td>
+                </tr>
+                <tr><td>B. Tech. Artificial Intelligence and Data Sciences</td>
+                </tr>
+                <tr><td><pre>                 + Programmes Accredited by NBA</pre></td></tr>
+                </center>
+                </table>
+                </div>
+                </div>
+        </div>
+    </div>
+</body>
 </html>
